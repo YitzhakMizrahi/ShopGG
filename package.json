@@ -7,7 +7,9 @@
   "scripts": {
     "server": "nodemon backend/server",
     "client": "cd frontend && yarn start",
-    "dev": "concurrently \"yarn server\" \"yarn client\""
+    "dev": "concurrently \"yarn server\" \"yarn client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
   },
   "repository": "git@github.com:YitzhakMizrahi/ShopGG.git",
   "author": "ymizrahi <yitzhak.tech@gmail.com>",
