@@ -10,7 +10,7 @@
     "dev": "concurrently \"yarn server\" \"yarn client\"",
     "data:import": "node backend/seeder",
     "data:destroy": "node backend/seeder -d",
-    "heroku-postbuild": "YARN_PRODUCTION=false yarn add --prefix frontend && yarn build --prefix frontend"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "repository": "git@github.com:YitzhakMizrahi/ShopGG.git",
   "author": "ymizrahi <yitzhak.tech@gmail.com>",
